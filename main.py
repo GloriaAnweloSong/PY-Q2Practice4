@@ -1,4 +1,4 @@
-from pyscript import document,display
+from pyscript import document, display
 
 def add_brand(e):
     document.getElementById('output1').innerHTML = ""
@@ -14,6 +14,6 @@ def add_brand(e):
 
     brand_list = "<br>".join(sorted(all_brands))
 
-#display--
+    # display--
     document.getElementById('output1').innerHTML = f'All brands: <br> {brand_list}'
-    display(f'TotalBrands: {total_brands}, target="output1"')
+    display(f'Total Brands: {total_brands}', target="output1")
